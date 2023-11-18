@@ -3,6 +3,8 @@
 
 #include <string>
 
+using namespace std;
+
 
 class EVENT 
 {
@@ -23,7 +25,7 @@ public:
     void set_date(string userDate);
     void set_time(string userTime);
     void set_location(string userLocation);
-    void set_purpose(string userPurpose)
+    void set_purpose(string userPurpose);
 
 
 
@@ -33,7 +35,7 @@ public:
 
 
 
-}
+};
 
 
 
