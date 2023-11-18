@@ -1,5 +1,5 @@
-#ifndef ENEMY_H
-#define ENEMY_H
+#ifndef EVENT_H
+#define EVENT_H
 
 
 
