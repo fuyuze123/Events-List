@@ -14,8 +14,8 @@ class collection
 
 
         void addEvent(EVENT userEvent);
-        void printList();
-
+        const void printList();
+        const void ListToHTML();
 
 
 
