@@ -33,3 +33,5 @@
 CMakeFiles
 CMakeCache.txt
 cmake_install.cmake
+event.exe
+event
