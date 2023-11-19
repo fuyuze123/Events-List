@@ -1,6 +1,6 @@
 # Events-List
 
-Authors: [Henry Lo] ,[Yuze Fu](https://github.com/fuyuze123)
+Authors: [Henry Lo](https://github.com/NoMercy678) ,[Yuze Fu](https://github.com/fuyuze123)
 
 This project aims to create a tool that generate html code based on user-entered event(with date, time, location, and purpose)
 
