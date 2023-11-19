@@ -6,8 +6,8 @@
 
 int main()
 {
-   userInterface object1;
-   object1.Interface();
+   userInterface launch;
+   launch.Interface();
 
 
 
