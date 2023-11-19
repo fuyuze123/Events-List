@@ -41,7 +41,11 @@ const void collection::ListToHTML()
     unsigned int vectorSize= eventList.size();
         for(unsigned int t = 0; t < vectorSize;t++)
         {
-            
+            userFile<<"<p>Date: "<<"<<"\n";
+            userFile<<"<p>Time: "<<"<<"\n";
+            userFile<<"<p>Location: "<<"<<"\n";
+            userFile<<"<p>Purpose: "<<"<<"\n";
+        
         }
 
 
