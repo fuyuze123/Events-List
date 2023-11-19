@@ -29,7 +29,10 @@ const void collection::printList()
 
         std::cout<<"Current List:  \n\n\n";
      for(unsigned int t = 0; t < vectorSize;t++)
-        {
+        {       
+            std::cout<<t<<"----------------------\n ";
+
+
             std::cout<<"Event Name: " << eventList.at(t).get_name()<<"\n";
             std::cout<<"Date: "<<eventList.at(t).get_date()<<"\n";
             std::cout<<"Time: "<<eventList.at(t).get_time()<<"\n";
@@ -38,6 +41,7 @@ const void collection::printList()
             std::cout<<"\n";
         }
 
+     std::cout<<"----------------------\n ";
 
     }
       
@@ -48,10 +52,15 @@ const void collection::printList()
 const void collection::ListToHTML()
 {
     fstream userFile;
-    userFile.open("html.txt",fstream::app);
+    userFile.open("html.txt",std::fstream::out );
     
 
     unsigned int vectorSize= eventList.size();
+
+    if(vectorSize!=0)
+    {
+ userFile<<"<p><strong>---------------------------</strong></p>";
+
         for(unsigned int t = 0; t < vectorSize;t++)
         {
             userFile<<"<p>Event Name: " << eventList.at(t).get_name()<<"<p>\n";
@@ -59,8 +68,17 @@ const void collection::ListToHTML()
             userFile<<"<p>Time: "<<eventList.at(t).get_time()<<"<p>\n";
             userFile<<"<p>Location: "<<eventList.at(t).get_location()<<"<p>\n";
             userFile<<"<p>Purpose: "<<eventList.at(t).get_purpose()<<"<p>\n";
+            userFile<<"<p><strong>---------------------------</strong></p>";
         
-        }
+        }   
+
+
+    }
+
+
+  
+
+    
 
 
     userFile.close();

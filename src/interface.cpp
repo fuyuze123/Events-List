@@ -60,11 +60,15 @@ void userInterface::Interface()
 
 
             case 1: {
-
+            std::string UName;
             std::string Udate;
              std::string Utime;
               std::string Ulocation; 
                std::string Upurpose;
+
+             std::cout << "Enter event name: ";
+            std::cin>>UName;
+
             std::cout << "Enter event date: ";
             std::cin>>Udate;
 
@@ -76,7 +80,7 @@ void userInterface::Interface()
             std::cout << "Enter event purpose: ";
             std::cin>>Upurpose;
 
-            EVENT newEvent(Udate,Utime,Ulocation,Upurpose);
+            EVENT newEvent(Udate,Utime,Ulocation,Upurpose,UName);
 
             userCollection.addEvent(newEvent);}
             break;
