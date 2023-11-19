@@ -63,11 +63,11 @@ const void collection::ListToHTML()
 
         for(unsigned int t = 0; t < vectorSize;t++)
         {
-            userFile<<"<p>Event Name: " << eventList.at(t).get_name()<<"<p>\n";
-            userFile<<"<p>Date: "<<eventList.at(t).get_date()<<"<p>\n";
-            userFile<<"<p>Time: "<<eventList.at(t).get_time()<<"<p>\n";
-            userFile<<"<p>Location: "<<eventList.at(t).get_location()<<"<p>\n";
-            userFile<<"<p>Purpose: "<<eventList.at(t).get_purpose()<<"<p>\n";
+            userFile<<"<p><strong>Event Name</strong>: " << eventList.at(t).get_name()<<"<p>\n";
+            userFile<<"<p><strong>Date</strong>: "<<eventList.at(t).get_date()<<"<p>\n";
+            userFile<<"<p><strong>Time</strong>: "<<eventList.at(t).get_time()<<"<p>\n";
+            userFile<<"<p><strong>Location</strong>: "<<eventList.at(t).get_location()<<"<p>\n";
+            userFile<<"<p><strong>Purpose</strong>: "<<eventList.at(t).get_purpose()<<"<p>\n";
             userFile<<"<p><strong>---------------------------</strong></p>";
         
         }   
