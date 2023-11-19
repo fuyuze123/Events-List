@@ -22,7 +22,7 @@ const void collection::printList()
 
     if(vectorSize == 0)
     {
-        std::cout<<"Empty List: ";
+        std::cout<<"Empty List\n";
     }
     else
     {

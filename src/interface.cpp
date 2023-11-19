@@ -42,7 +42,8 @@ void userInterface::Interface()
         cout<<"1. Create event\n";
         cout<<"2. View current events\n";
         cout<<"3. convert all current events to HTML\n";
-        cout<<"4. Exit\n\n";
+        cout<<"4. Exit\n";
+        cout<<"5. Remove all existing events\n";
        
         cin>>userInput;
         
@@ -99,6 +100,22 @@ void userInterface::Interface()
             ifContinue = 0;}
 
             break;
+
+            case 5:{
+                cout<<"Enter Y to remove all events: ";
+                cin>>userInput;
+                if(userInput == "y"|| userInput =="Y")
+                {
+                    userCollection.clearEvent();
+                    cout<<"Event cleared\n";
+
+
+                }
+                else{
+                    cout<<"Event not cleared\n";
+                }
+
+            }
 
             default: 
             {

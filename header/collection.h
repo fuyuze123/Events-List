@@ -12,7 +12,11 @@ class collection
         collection();
         
 
+        void clearEvent()
+        {
+            eventList.clear();
 
+        }
         void addEvent(EVENT userEvent);
         const void printList();
         const void ListToHTML();
