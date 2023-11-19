@@ -35,12 +35,13 @@ const void collection::printList()
 const void collection::ListToHTML()
 {
     fstream userFile;
-    userFile.open("html.txt",fstream::app);
+    userFile.open("html.txt",fstream::out);
     
-
+    
     unsigned int vectorSize= eventList.size();
         for(unsigned int t = 0; t < vectorSize;t++)
         {
+
             userFile<<"<p>Date: "<<eventList.at(t).get_date()<<"<p>\n";
             userFile<<"<p>Time: "<<eventList.at(t).get_time()<<"<p>\n";
             userFile<<"<p>Location: "<<eventList.at(t).get_location()<<"<p>\n";
