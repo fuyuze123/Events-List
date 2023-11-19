@@ -41,10 +41,10 @@ const void collection::ListToHTML()
     unsigned int vectorSize= eventList.size();
         for(unsigned int t = 0; t < vectorSize;t++)
         {
-            userFile<<"<p>Date: "<<eventList.at(t).get_date()<<"\n";
-            userFile<<"<p>Time: "<<eventList.at(t).get_time()<<"\n";
-            userFile<<"<p>Location: "<<eventList.at(t).get_location()<<"\n";
-            userFile<<"<p>Purpose: "<<eventList.at(t).get_purpose()<<"\n";
+            userFile<<"<p>Date: "<<eventList.at(t).get_date()<<"<p>\n";
+            userFile<<"<p>Time: "<<eventList.at(t).get_time()<<"<p>\n";
+            userFile<<"<p>Location: "<<eventList.at(t).get_location()<<"<p>\n";
+            userFile<<"<p>Purpose: "<<eventList.at(t).get_purpose()<<"<p>\n";
         
         }
 
