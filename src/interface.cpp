@@ -3,6 +3,8 @@
 
 using namespace std;
 
+void halting();
+
 bool ifValid(string userInput)
 {
     bool res = true;
@@ -84,11 +86,13 @@ void userInterface::Interface()
             EVENT newEvent(Udate,Utime,Ulocation,Upurpose,UName);
 
             userCollection.addEvent(newEvent);}
+             halting();
             break;
 
 
             case 2:{
             userCollection.printList();}
+            halting();
             break;
 
 
@@ -114,8 +118,10 @@ void userInterface::Interface()
                 else{
                     cout<<"Event not cleared\n";
                 }
-
+               
             }
+             halting();
+            break;
 
             default: 
             {
@@ -128,7 +134,7 @@ void userInterface::Interface()
 
 
 
-
+         
 
 
 
@@ -147,4 +153,21 @@ void userInterface::Interface()
 
 
 
+}
+
+
+void halting()
+{
+    string userInput;
+       while(1)
+            {
+
+                cout<<"Enter anything to continue\n\n\n\n";
+                cin>>userInput;
+
+                if(userInput.size()!=0)
+                {
+                    break;
+                }
+            }
 }
