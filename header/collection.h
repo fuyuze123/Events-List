@@ -10,7 +10,7 @@ class collection
 
     public:
         collection();
-
+        
 
 
         void addEvent(EVENT userEvent);

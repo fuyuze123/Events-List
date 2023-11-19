@@ -8,6 +8,7 @@ ADD_EXECUTABLE(event
   src/event.cpp
   src/collection.cpp
   src/main.cpp
+  src/interface.cpp
 )
 
 

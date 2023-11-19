@@ -1,16 +1,14 @@
 #include "../header/event.h"
 #include "../header/collection.h"
+#include "../header/interface.h"
+#include "../header/event.h"
 #include <iostream>
 
 int main()
 {
-    EVENT object("a","b","c","d");
- 
+   userInterface object1;
+   object1.Interface();
 
-    collection objectTest;
-    objectTest.addEvent(object);
-    objectTest.printList();
-    objectTest.ListToHTML();
 
 
 }

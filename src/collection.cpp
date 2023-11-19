@@ -19,7 +19,16 @@ void collection::addEvent(EVENT userEvent)
 const void collection::printList()
 {
     unsigned int vectorSize= eventList.size();
-        for(unsigned int t = 0; t < vectorSize;t++)
+
+    if(vectorSize == 0)
+    {
+        std::cout<<"Empty List: ";
+    }
+    else
+    {
+
+        std::cout<<"Current List:  \n\n\n";
+     for(unsigned int t = 0; t < vectorSize;t++)
         {
             std::cout<<"Date: "<<eventList.at(t).get_date()<<"\n";
             std::cout<<"Time: "<<eventList.at(t).get_time()<<"\n";
@@ -28,6 +37,9 @@ const void collection::printList()
             std::cout<<"\n";
         }
 
+
+    }
+      
 
 
 }
